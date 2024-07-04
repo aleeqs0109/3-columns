@@ -1,0 +1,133 @@
+:root {
+    /* ==Container-Colors== */
+    --clr-orange: hsl(31, 77%, 52%);
+    --clr-cyan: hsl(184, 100%, 22%);
+    --clr-very-dark-cyan: hsl(179, 100%, 13%);
+
+    /* ==Neutral-Colors== */
+    --clr-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --clr-very-light-grey: hsl(0, 0%, 95%);
+    /* Very light grey for: (background, headings, buttons)*/
+}
+
+html {
+}
+
+body {
+    margin: 0;
+    font-family: 'Lexend Deca';
+    margin-top: 350px;
+    background-color: var(--clr-very-light-grey);
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 700;
+    font-size: 2.6rem;
+    text-transform: uppercase;
+
+    color: var(--clr-very-light-grey);
+}
+
+p {
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    color: var(--clr-white-paragraphs);
+    margin-bottom: 5em;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+.flex_container {
+    margin-inline: auto;
+    width: 920px;
+    height: auto;
+    display: flex;
+    border-radius: 0.7rem;
+    overflow: hidden;
+    perspective: 1px;
+}
+
+.container {
+    padding: 2.8rem;
+}
+
+.container1 {
+    background-color: var(--clr-orange);
+}
+
+.container2 {
+    background-color: var(--clr-cyan);
+}
+
+.container3 {
+    background-color: var(--clr-very-dark-cyan);
+}
+
+#button1 {
+    color: var(--clr-orange);
+}
+
+#button2 {
+    color: var(--clr-cyan);
+}
+
+#button3 {
+    color: var(--clr-very-dark-cyan);
+}
+
+button {
+    font-size: 15px;
+    width: 150px;
+    height: 50px;
+    background-color: var(--clr-very-light-grey);
+    border: 0px solid transparent;
+    border-radius: 55%;
+    text-align: center;
+    border-radius: 50px;
+    transition-duration: 0.8s;
+}
+
+#button1:hover {
+    background-color: var(--clr-orange);
+    color: var(--clr-very-light-grey);
+    border: 1px solid var(--clr-very-light-grey);
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#button2:hover {
+    background-color: var(--clr-cyan);
+    color: var(--clr-very-light-grey);
+    border: 1px solid var(--clr-very-light-grey);
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#button3:hover {
+    background-color: var(--clr-very-dark-cyan);
+    color: var(--clr-very-light-grey);
+    border: 1px solid var(--clr-very-light-grey);
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* ==MOBILE // SMARTPHONE */
+
+@media only screen and (max-width: 375px) {
+    body {
+        margin: 1em;
+    }
+
+    .flex_container {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    p {
+        margin-bottom: 2em;
+    }
+}
